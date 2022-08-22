@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+//arriba del componente van los IMPORTS.
+//en el medio, delcaramos el componente funcional con lo que debe renderizar y la logica
+//abajo del componente van los exports.
 
-function App() {
+import TukiComponents from "./components/TukiComponents";
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>MI PRIMER APP EN REACT</h1>
+      <TukiComponents />
     </div>
   );
 }
 
 export default App;
+
+//expor default exporta el componente app para usarlo en otro archivo. en ese otro archivo se puede importar con el nombre app o le puedo poner un alias. (ponerle otro nmbre)
+//export exporta una variable o una funcion. el componente para usarlo en otr archivo y debo invocarlo con el mismo nombre que en el export y llamarlo entre llaves.
+
