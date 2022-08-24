@@ -5,9 +5,28 @@
 import TukiComponents from "./components/TukiComponents";
 
 const App = () => {
-  return (
+    console.log("App");
+  return (   //renderizo el componente
     <div className="App">
       <h1>MI PRIMER APP EN REACT</h1>
+
+      <form>
+                <div className="form-group">
+                    <label htmlFor="exampleInputEmail1">Correo electrónico</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico" />
+                    <small id="emailHelp" className="form-text text-muted">No se compartirá la información.</small>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="exampleInputPassword1"> Contraseña </label>
+                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Contraseña" />
+                </div>
+                <div className="form-check">
+                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                    <label className="form-check-label" htmlFor="exampleCheck1">Salir</label>
+                </div>
+            <button type="submit" className="btn btn-primary">Enviar</button>
+            </form>
+
       <TukiComponents />
     </div>
   );
