@@ -8,9 +8,7 @@ const TukiComponents = () => {
 
     return (   //retorna contenido que veo en el DOM
         <div>
-            <h1>Tuki Components</h1>
             <TukiChild />
-
         </div>
 
     );
